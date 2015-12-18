@@ -33,14 +33,14 @@ public class EvenAndOdd
         else 
             System.out.println("You entered an ODD number");
         
-       // print blank line, durning test, 
-       // notice bug occssionaly printing on same line
+       // print blank line, during test, 
+       // notice bug occasionally printing on same line
         System.out.println("");
         
         // Math, if user input is equally divided by 3 and 5 then prints
         if ((input % 3 == 0) && (input % 5 == 0))
             System.out.print("Divisible by both Three and Five");
-        // Math, if user input divded by 3 then prints out
+        // Math, if user input divided by 3 then prints out
         else if (input % 3 == 0) 
             System.out.println("Divisible by Three");
         // Math, if user input divided by 5 then prints out
