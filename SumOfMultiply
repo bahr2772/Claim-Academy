@@ -1,0 +1,47 @@
+/*
+ * Justin Bahr
+ * 12/16/15
+ *
+ * SumOfMultiply.cs
+ * Challenge for Claim Academy, Java
+ */
+
+package SumOfMultiply;
+
+// import text scanner 
+import java.util.Scanner;
+
+public class SumOfMultiply
+{
+        // main funtion 
+        public static void main(String[] args) 
+    {
+        // set variable, long to use larger number for fun
+        long input;
+        
+        // print instructions to screen asking for input.
+        // create new Scanner to pause, take user input and store as 'input'
+        System.out.println("Enter the number you would like to get the sum of all multiples of 3 and 5:");
+        Scanner textscan = new Scanner(System.in);
+        input = textscan.nextLong();
+
+        // initalize var 'sum' to keep track of sums
+        int sum = 0;
+        
+        // For loop, starting at 0, increamenting by 1 each loop, 
+        // as long as 'i' is less then input
+        for (int i = 3; i < input; i++)
+        {
+            // Math, as i increments, takes multiple of 3 or 5 and adds that multiple
+            // to zero, as long as the reminder is equal to 0
+            // then adds to sum.
+                if (i % 3 == 0 || i % 5 == 0) sum += i;
+        }
+        // prints out sum of multiples of 3 or 5 of input
+        System.out.println("The sum is " + sum);
+    }
+
+ 
+    
+}
+
